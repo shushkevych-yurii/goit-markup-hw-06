@@ -693,7 +693,6 @@ a{
  .content-list:hover .overlay {
     transform: translateY(0);
     
-    
  }
 
  .overlay {
@@ -736,6 +735,7 @@ a{
     position: fixed;
     top:0;
     left:0;
+    z-index: 10;
     
     height: 100%;
     width: 100%;
@@ -830,7 +830,7 @@ a{
   БЛОК ФОРМА
 ------------------- */
 .text-form{
-    font-family: 'Roboto';
+    font-family: inherit;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -842,12 +842,192 @@ a{
     
     color: var(--title-text-color);
 }
-.form-field{
-    display: flex;
+
+.label-form{
+font-family: inherit;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.16;
+/* identical to box height */
+
+letter-spacing: 0.01em;
+
+color: var(--primary-text-color);
+
+padding-top: 10px;
+
+}
+
+.icon-form{
+    top:50%;
+    padding-left: 14px;
+
+    display: inline-block;
+    position: absolute;
+
+}
+.input-form{
+    position: relative;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    
+    height: 40px;
+    width: 448px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 4px;
+
     
 }
-.label-form{
+.modal-content{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* identical to box height, or 171% */
     
+    letter-spacing: 0.03em;
+    
+    color: var(--primary-text-color);
+    padding-top: 20px;
+    padding-left: 40px;
+}
+.modal-link{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* identical to box height, or 171% */
+    
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    
+    color: var(--accent-color);
+}
+.submit-form{
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.submit-form-text{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    color: var(--bgrd-color);
+}
+
+.clients-field{
+    padding-left: 40px;
+}
+.coment-form{
+    padding-top: 10px;
+}
+.textarea{
+    height: 120px;
+    width: 448px;
+    
+}
+.form-text{
+    padding-top: 10px;
+    padding-bottom: 4px;
+}
+
+
+.form-checkbox + .unchecked{
+    opacity: 1;
+}
+.form-checkbox:checked .form-checkbox-icon .unchecked{
+    opacity: 0;
+}
+.form-checkbox:checked .checked{
+    opacity: 0;
+}
+.form-checkbox:checked + .form-checkbox-icon .checked{
+    opacity: 1;
+}
+
+/* -------------------
+Блок футер розсилки
+------------------- */
+.footer-text{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--bgrd-color);
+    padding-bottom: 20px;
+}
+.f-input-form{
+    width: 358px;
+    height: 50px;
+    
+    
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2F303A;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    /* identical to box height, or 125% */
+    
+    padding-left: 16px;
+        
+    letter-spacing: 0.03em;
+
+    
+    color: rgba(255, 255, 255, 0.6);   
+}
+.footer-submit{
+    width: 200px;
+    height: 50px; 
+    
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    padding-left: 12px;
+    
+}
+.footer-button-text{
+    font-family: 'inherit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
+    
+    
+    letter-spacing: 0.06em;
+    
+    color: var(--bgrd-color);
+
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 
